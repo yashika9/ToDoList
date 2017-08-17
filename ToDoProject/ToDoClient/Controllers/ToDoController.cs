@@ -27,7 +27,7 @@ namespace ToDoClient.Models
         [HttpPost]
         public ActionResult Create(Todo td)
         {
-            td.DeadlineDate = DateTime.Now;
+           // td.DeadlineDate = DateTime.Now;
             TodoClient todo = new TodoClient();
             todo.Create(td);
             return RedirectToAction("Index");

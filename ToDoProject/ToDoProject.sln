@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoProject", "ToDoProject\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoClient", "ToDoClient\ToDoClient.csproj", "{7EE4E5F2-502C-492A-A34E-B4840656DBEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormClient", "WebFormClient\WebFormClient.csproj", "{F15E9DE1-DA36-40E5-8ED3-C80CEBB05288}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{7EE4E5F2-502C-492A-A34E-B4840656DBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EE4E5F2-502C-492A-A34E-B4840656DBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE4E5F2-502C-492A-A34E-B4840656DBEA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F15E9DE1-DA36-40E5-8ED3-C80CEBB05288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F15E9DE1-DA36-40E5-8ED3-C80CEBB05288}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F15E9DE1-DA36-40E5-8ED3-C80CEBB05288}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F15E9DE1-DA36-40E5-8ED3-C80CEBB05288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
