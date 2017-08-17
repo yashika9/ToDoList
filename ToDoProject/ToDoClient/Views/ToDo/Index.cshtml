@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Todo</h4>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <th>Task</th>
+            <th>Deadline Date</th>
+            <th>Completed</th>
+            <th>Details</th>
+            <th>Option</th>
+        </tr>
+        @foreach (var t in ViewBag.result)
+        {
+            string style = (@t.DeadlineDate < @DateTime.Today) ? "background-color:Red" : null;
+            <tr style="@style">
+                    <td>@t.Task</td>
+                    <td>@t.DeadlineDate</td>
+                    <td>@t.IsCompleted</td>
+                    <td>@t.details</td>
+                    <td>
+                    <a onclick="return confirm('Are you sure?')" href="@Url.Action("Delete","Todo", new { id = t.TaskId}) ">Delete</a> | 
+                        <a href="@Url.Action("Edit","Todo", new { id = t.TaskId}) ">Edit</a></td>
+                </tr>
+              
+            }
+
+        </table>
+        <a href="@Url.Action("Create", "ToDo")">Add new todo</a>
+    </div>
+
